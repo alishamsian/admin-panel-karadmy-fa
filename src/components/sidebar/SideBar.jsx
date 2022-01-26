@@ -3,23 +3,8 @@ import "./Sidebar.css"
 import logo from '../../assets/images/logo.png'
 import sidebar_items from '../../assets/JsonData/sidebar_routes.json'
 import { Link } from 'react-router-dom'
+import SidebarItem from '../sidebaritem/SidebarItem'
 
-
-
-const SidebarItem = props => {
-    const active = props.active ? 'active' : ''
-
-    return (
-        <div className="sidebar__item">
-            <div className={`sidebar__item-inner ${active}`}>
-                <i className={props.icon}></i>
-                <span>
-                    {props.title}
-                </span>
-            </div>
-        </div>
-    )
-}
 
 const SideBar = props => {
 
