@@ -1,7 +1,7 @@
 import products from "../assets/JsonData/products.json";
 import Table from "../components/table/Table";
 
-const customerTableHead = [
+const productTableHead = [
   "",
   "نام کالا",
   "قیمت",
@@ -34,7 +34,7 @@ const Products = () => {
             <div className="card__body">
             <Table
                 limit= '10'
-                headData={customerTableHead}
+                headData={productTableHead}
                 renderHead={(item, index)=> renderHead(item, index)}
                 bodyData={products}
                 renderBody={(item, index)=> renderBody(item, index)}

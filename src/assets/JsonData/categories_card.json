@@ -1,0 +1,34 @@
+[
+    {
+        "icon": "bx bxs-watch",
+        "title": "کل فروش"
+    },
+    {
+        "icon": "bx bx-camera",
+        "title": "بازدیدهای روزانه"
+    },
+    {
+        "icon": "bx bx-laptop",
+        "title": "درآمد کلی"
+    },
+    {
+        "icon": "bx bx-mobile-alt",
+        "title": "کل سفارشات"
+    },
+    {
+        "icon": "bx bx-devices",
+        "title": "کل فروش"
+    },
+    {
+        "icon": "bx bx-cart",
+        "title": "بازدیدهای روزانه"
+    },
+    {
+        "icon": "bx bx-lemon",
+        "title": "درآمد کلی"
+    },
+    {
+        "icon": "bx bx-shopping-bag",
+        "title": "کل سفارشات"
+    }
+]
