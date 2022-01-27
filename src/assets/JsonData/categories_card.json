@@ -1,34 +1,102 @@
 [
     {
         "icon": "bx bxs-watch",
-        "title": "کل فروش"
+        "title": "ساعت",
+        "background-color": "danger"
     },
     {
         "icon": "bx bx-camera",
-        "title": "بازدیدهای روزانه"
+        "title": "دوربین ",
+        "background-color" : "success"
     },
     {
         "icon": "bx bx-laptop",
-        "title": "درآمد کلی"
+        "title": "لپ تاپ",
+        "background-color" : "primary"
     },
     {
         "icon": "bx bx-mobile-alt",
-        "title": "کل سفارشات"
+        "title": "موبایل",
+        "background-color" : "success"
     },
     {
         "icon": "bx bx-devices",
-        "title": "کل فروش"
+        "title": "تبلت",
+        "background-color" : "success"
     },
     {
         "icon": "bx bx-cart",
-        "title": "بازدیدهای روزانه"
-    },
-    {
-        "icon": "bx bx-lemon",
-        "title": "درآمد کلی"
+        "title": "سبد",
+        "background-color" : "primary"
     },
     {
         "icon": "bx bx-shopping-bag",
-        "title": "کل سفارشات"
+        "title": "کیف",
+        "background-color" : "success"
+    },
+    {
+        "icon": "bx bx-joystick",
+        "title": "کنسول بازی",
+        "background-color" : "danger"
+    },
+    {
+        "icon": "bx bxs-watch",
+        "title": "ساعت",
+        "background-color" : "primary"
+    },
+    {
+        "icon": "bx bx-camera",
+        "title": "دوربین ",
+        "background-color" : "success"
+    },
+    {
+        "icon": "bx bx-laptop",
+        "title": "لپ تاپ",
+        "background-color" : "danger"
+    },
+    {
+        "icon": "bx bx-mobile-alt",
+        "title": "موبایل",
+        "background-color" : "warning"
+    },
+    {
+        "icon": "bx bx-devices",
+        "title": "تبلت",
+        "background-color" : "success"
+    },
+    {
+        "icon": "bx bx-cart",
+        "title": "سبد",
+        "background-color" : "danger"
+    },
+    {
+        "icon": "bx bx-shopping-bag",
+        "title": "کیف",
+        "background-color" : "warning"
+    },
+    {
+        "icon": "bx bx-joystick",
+        "title": "کنسول بازی",
+        "background-color" : "primary"
+    },
+    {
+        "icon": "bx bxs-watch",
+        "title": "ساعت",
+        "background-color" : "danger"
+    },
+    {
+        "icon": "bx bx-camera",
+        "title": "دوربین ",
+        "background-color" : "warning"
+    },
+    {
+        "icon": "bx bx-laptop",
+        "title": "لپ تاپ",
+        "background-color" : "primary"
+    },
+    {
+        "icon": "bx bx-mobile-alt",
+        "title": "موبایل",
+        "background-color" : "danger"
     }
 ]

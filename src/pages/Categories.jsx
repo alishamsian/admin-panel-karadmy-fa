@@ -1,8 +1,8 @@
 import categoriesCard from "../assets/JsonData/categories_card.json";
 import StatusCard from "../components/status-card/StatusCard";
-// import Table from "../components/table/Table";
 
-const Categories = () => {
+
+const Categories = props => {
   return (
     <div>
       <h2 className="page-header">دسته بندی ها</h2>
@@ -12,9 +12,10 @@ const Categories = () => {
             {categoriesCard.map((item, index) => (
               <div className="col-3" key={index}>
                 <StatusCard
+                  color={item["background-color"]}
+                  type={'fs2'}
                   icon={item.icon}
-                  count={item.count}
-                  title={item.title}
+                  title={item.title} 
                 />
               </div>
             ))}
