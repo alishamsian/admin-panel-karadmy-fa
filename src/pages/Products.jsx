@@ -3,10 +3,11 @@ import Table from "../components/table/Table";
 
 const customerTableHead = [
   "",
-  "نام",
-  "ایمیل",
-  "شماره",
-  "کل سفارشات",
+  "نام کالا",
+  "قیمت",
+  "موجودی",
+  "خریداری شده",
+  "دسته بندی"
 ];
 
 const renderHead = (item, index)=> <th key={index}>{item}</th>
@@ -16,7 +17,8 @@ const renderBody = (item, index)=>(
         <td>{item.id}</td>
         <td>{item.title}</td>
         <td>{item.price}</td>
-        <td>{item.description}</td>
+        <td>{item.stock}</td>
+        <td>{item.sold}</td>
         <td>{item.category}</td>
         
     </tr>
