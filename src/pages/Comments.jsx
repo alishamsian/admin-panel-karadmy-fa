@@ -1,14 +1,13 @@
-import customerList from "../assets/JsonData/customers-list.json";
+import comments from "../assets/JsonData/comments.json";
 import Table from "../components/table/Table";
 
-const customerTableHead = [
+const commentsTableHead = [
   "",
   "نام",
   "ایمیل",
-  "شماره",
-  "کل سفارشات",
-  "کل هزینه",
-  "آدرس",
+  "نظر",
+  "کالا",
+  "امتیاز",
 ];
 
 const renderHead = (item, index)=> <th key={index}>{item}</th>
@@ -18,26 +17,25 @@ const renderBody = (item, index)=>(
         <td>{item.id}</td>
         <td>{item.name}</td>
         <td>{item.email}</td>
-        <td>{item.phone}</td>
-        <td>{item.total_orders}</td>
-        <td>{item.total_spend}</td>
-        <td>{item.location}</td>
+        <td>{item.comment}</td>
+        <td>{item.product}</td>
+        <td>{item.stars}</td>
     </tr>
 )
 
-const Customers = () => {
+const Comments = () => {
   return (
     <div>
-      <h2 className="page-header">مشتریان</h2>
+      <h2 className="page-header">نظرات</h2>
       <div className="row">
         <div className="col-12">
           <div className="card">
             <div className="card__body">
             <Table
                 limit= '10'
-                headData={customerTableHead}
+                headData={commentsTableHead}
                 renderHead={(item, index)=> renderHead(item, index)}
-                bodyData={customerList}
+                bodyData={comments}
                 renderBody={(item, index)=> renderBody(item, index)}
               />
             </div>
@@ -48,4 +46,4 @@ const Customers = () => {
   );
 };
 
-export default Customers;
+export default Comments;
