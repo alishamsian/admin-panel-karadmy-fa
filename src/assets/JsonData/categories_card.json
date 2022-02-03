@@ -36,7 +36,7 @@
     },
     {
         "icon": "bx bx-joystick",
-        "title": "کنسول بازی",
+        "title": "بازی",
         "background-color" : "danger"
     },
     {
@@ -76,7 +76,7 @@
     },
     {
         "icon": "bx bx-joystick",
-        "title": "کنسول بازی",
+        "title": "بازی",
         "background-color" : "primary"
     },
     {
