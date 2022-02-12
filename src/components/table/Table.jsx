@@ -7,10 +7,6 @@ const Table = props => {
 
     const [dataShow, setDataShow] = useState(initDataShow);
   
-    useEffect(() => {
-      console.log(dataShow)
-    }, [dataShow])
-    
     return (
   
         <div>
