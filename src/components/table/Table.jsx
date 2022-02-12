@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './table.css'
 
 const Table = props => {
@@ -7,6 +7,10 @@ const Table = props => {
 
     const [dataShow, setDataShow] = useState(initDataShow);
   
+    useEffect(() => {
+      console.log(dataShow)
+    }, [dataShow])
+    
     return (
   
         <div>
@@ -24,7 +28,7 @@ const Table = props => {
                         ) : null
                     }
                     {
-                        props.bodyData &&props.renderBody ? (
+                        props.bodyData && props.renderBody ? (
                             <tbody>
                                 {
                                     dataShow.map((item , index)=>props.renderBody(item, index))
