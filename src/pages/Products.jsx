@@ -1,17 +1,14 @@
 // import products from "../assets/JsonData/products.json";
 import Table from "../components/table/Table";
-import { useEffect, useState } from "react";
-import axios from "axios";
-
-axios.defaults.baseURL = "https://my.api.mockaroo.com";
+import useAxios from "../hooks/useAxios/useAxios";
 
 const productTableHead = [
   "",
-  "نام کالا",
+  "شرکت خودرو",
+  "مدل خودرو",
+  "سال تولید",
+  "رنگ",
   "قیمت",
-  "موجودی",
-  "خریداری شده",
-  "دسته بندی",
 ];
 
 const renderHead = (item, index) => <th key={index}>{item}</th>;
@@ -20,49 +17,18 @@ const renderHead = (item, index) => <th key={index}>{item}</th>;
 const renderBody = (item, index) => (
   <tr key={index}>
     <td>{item.id}</td>
-    <td>{item.first_name}</td>
-    <td>{item.email}</td>
-    <td>{item.ip_address}</td>
+    <td>{item.car_make}</td>
+    <td>{item.car_model}</td>
+    <td>{item.car_model_year}</td>
+    <td>{item.color}</td>
+    <td>{item.pricc}</td>
   </tr>
 );
 
 
 const Products = () => {
-  //   const [data, setData] = useState([])
-
-  //   const fetchData = () => {
-  //     axios
-  //         .get('/posts')
-  //         .then((res) => {
-  //             console.log(res.data);
-  //             setData(res.data)
-  //         })
-  //         .catch((err) => {
-  //             console.log(err);
-  //         });
-  // };
-
-  // useEffect(() => {
-  //     fetchData();
-  // }, []);
-
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      try {
-        const { data: response } = await axios.get("/pruducts.json?key=614e2dd0");
-        setData(response);
-      } catch (error) {
-        console.error(error.message);
-      }
-      setLoading(false);
-    };
-
-    fetchData();
-  }, []);
+  
+  const { data, loading } = useAxios({url: '/car.json?key=614e2dd0'})
 
   return (
     <div>
