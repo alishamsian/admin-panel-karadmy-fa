@@ -44,7 +44,7 @@ const chartOptions = {
       position: "top",
     },
     grid: {
-      show: false,
+      show: true,
     },
   },
 };
