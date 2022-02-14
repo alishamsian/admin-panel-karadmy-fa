@@ -1,4 +1,5 @@
 // import products from "../assets/JsonData/products.json";
+import Loader from "../components/loader/Loader";
 import Table from "../components/table/Table";
 import useAxios from "../hooks/useAxios/useAxios";
 
@@ -37,7 +38,7 @@ const Products = () => {
         <div className="col-12">
           <div className="card">
             <div className="card__body">
-              {loading && <div>Loading</div>}
+              {loading && <Loader />}
               {!loading && (
                 <Table
                   limit="10"
